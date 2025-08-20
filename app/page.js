@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6">
-      <h1 className="text-3xl font-bold mb-6 text-gray-200">
+      <h1 className="text-xl md:text-3xl font-bold mb-6 text-gray-200">
         DOWNLOAD <span className="text-violet-700">YOUR VIDEO</span>
       </h1>
 
@@ -36,12 +36,12 @@ export default function Home() {
           placeholder="Paste YouTube / Instagram / Facebook / Pinterest link"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
-          className="flex-grow px-4 py-2 rounded-l-2xl border-none outline-none"
+          className="flex-grow px-4 py-2  border-none outline-none"
         />
         <button
           onClick={fetchDownload}
           disabled={loading}
-          className="px-6 py-2  bg-blue-600 text-white font-semibold hover:bg-blue-700 transition disabled:opacity-50"
+          className="px-6 py-2 text-xs md:text-[.9rem]  bg-blue-600 text-white font-semibold hover:bg-blue-700 transition disabled:opacity-50"
         >
           {loading ? "Loading..." : "Download"}
         </button>
