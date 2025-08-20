@@ -41,7 +41,7 @@ export default function Home() {
         <button
           onClick={fetchDownload}
           disabled={loading}
-          className="px-6 py-2 text-xs md:text-[.9rem]  bg-blue-600 text-white font-semibold hover:bg-blue-700 transition disabled:opacity-50"
+          className="md:px-6 px-2 py-2 text-xs md:text-[.9rem]  bg-blue-600 text-white font-semibold hover:bg-blue-700 transition disabled:opacity-50"
         >
           {loading ? "Loading..." : "Download"}
         </button>
